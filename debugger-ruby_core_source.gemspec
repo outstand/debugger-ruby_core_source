@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
   s.extra_rdoc_files = [ "README.md"]
   s.files = `git ls-files`.split("\n")
+  s.require_paths = %w[lib]
   s.add_development_dependency "archive-tar-minitar", ">= 0.5.2"
   s.add_development_dependency 'rake', '~> 0.9.2'
 end
