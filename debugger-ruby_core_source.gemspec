@@ -1,6 +1,9 @@
 # -*- encoding: utf-8 -*-
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 require 'rubygems' unless defined? Gem
-require File.dirname(__FILE__) + "/lib/debugger/ruby_core_source/version"
+require 'debugger/ruby_core_source/version'
 
 Gem::Specification.new do |s|
   s.name = "debugger-ruby_core_source"
